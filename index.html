@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Eman Ahmed</title>
+    <link rel="shortcut icon" href="img/port.webp" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+  tailwind.config = {
+    darkMode: 'class'
+  }
+</script>
+    
+</head>
+
+<body class="bg-white text-black dark:bg-black dark:text-white selection:bg-accent/30 selection:text-accent bg-gradient-mesh transition-colors duration-500">
+    <!-- Navigation -->
+    <nav class="fixed z-50 left-0  top-0 w-full  flex items-center justify-between p-4 mx-auto max-w-6xl">
+        <div class="shadow-lg rounded-full p-2">
+            <img src="img/port.webp" alt="" class="w-12 h-12 rounded-full">
+        </div>
+        <ul id="mobile-menu" class="hidden md:flex gap-6 text-gray-400 font-medium">
+            <li
+                class="dark:hover:text-white hover:text-blue-400 transition-colors duration-500 border-b-2 border-transparent pb-1 hover:border-blue-500">
+                <a href="index.html">Home</a>
+            </li>
+            <li
+                class="dark:hover:text-white hover:text-blue-400 transition-colors duration-500 border-b-2 border-transparent pb-1 hover:border-blue-500">
+                <a href="#About">About</a>
+            </li>
+            <li
+                class="dark:hover:text-white hover:text-blue-400 transition-colors duration-500 border-b-2 border-transparent pb-1 hover:border-blue-500">
+                <a href="#Projects">Projects</a>
+            </li>
+            <li
+                class="dark:hover:text-white hover:text-blue-400 transition-colors duration-500 border-b-2 border-transparent pb-1 hover:border-blue-500">
+                <a href="#Contact">Contact</a>
+            </li>
+            <li>
+                <button id="darkToggleBtn" class="p-2 rounded bg-gray-200 dark:bg-gray-800">
+                    
+                </button>
+            </li>
+        </ul>
+        <button id="mobile-btn" class="md:hidden text-2xl">
+            ☰
+        </button>
+    </nav>
+    <!-- Home bage -->
+    <header class="h-screen max-w-6xl mt-20 mx-auto px-4 py-16">
+
+        <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+
+            <div class="space-y-6 max-w-lg">
+
+                <h1>
+                    <span class="text-zinc-400 text-7xl font-bold block hover:text-zinc-500 transition">
+                        Eman Ahmed
+                    </span>
+
+                    <span class="text-blue-500 text-5xl font-semibold">
+                        Frontend Developer
+                    </span>
+                </h1>
+
+                <p class="text-gray-400 text-lg">
+                    I create beautiful, responsive websites with modern technologies.
+                </p>
+
+            </div>
+            <div>
+                <img src="img/port.webp" alt="Eman Ahmed"
+                    class="floating w-64 h-80 object-cover rounded-full border-4 border-blue-500 shadow-[0_0_40px_15px_rgba(0,0,255,0.7)] transition-all ">
+            </div>
+
+        </div>
+
+    </header>
+    <!-- About me -->
+    <section id="About" class="min-h-screen max-w-6xl mx-auto px-4 py-16">
+        <div class="">
+            <h2 class="text-4xl font-bold">About Me</h2>
+            <p class="text-gray-400 text-lg">The Story & The Skills</p>
+        </div>
+        <div class="MySkils mt-10">
+            <h3 class="text-2xl font-bold">My Skills</h3>
+            <p class="font-medium p-10 text-gray-400"> <span>Who am I?</span>
+                I'm Eman Ahmed, a passionate Frontend Developer who enjoys building modern and responsi
+                ve web interfaces. I focus on creating clean, user-friendly designs while writing organized and
+                efficient code.
+                I'm always learning new technologies and improving my skills to build better digital experiences. ✨</p>
+            <ul class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <li
+                    class="group bg-gray-300 dark:bg-gray-800 p-4 rounded-lg border border-transparent transition-all duration-300 hover:scale-105 hover:border-blue-500 hover:shadow-[0_0_30px_5px_rgba(59,130,246,0.4)]">
+                    <img src="https://icongr.am/devicon/html5-original.svg?size=128&color=currentColor" alt="HTML Icon"
+                        class="w-12 h-12 mb-2 transition-transform duration-500 ease-in-out group-hover:rotate-[270deg]">
+                    <h3>HTML</h3>
+                </li>
+                <li
+                    class="group bg-gray-300 dark:bg-gray-800 p-4 rounded-lg border border-transparent transition-all duration-300 hover:scale-105 hover:border-blue-500  hover:shadow-[0_0_30px_5px_rgba(59,130,246,0.4)]">
+                    <img src="https://icongr.am/devicon/css3-original.svg?size=128&color=currentColor" alt="CSS Icon"
+                        class="w-12 h-12 mb-2 transition-transform duration-500 ease-in-out group-hover:rotate-[270deg]">
+                    <h3>CSS</h3>
+                </li>
+                <li
+                    class="group bg-gray-300 dark:bg-gray-800 p-4 rounded-lg border border-transparent transition-all duration-300 hover:scale-105 hover:border-blue-500 hover:shadow-[0_0_30px_5px_rgba(59,130,246,0.4)]">
+                    <img src="https://icongr.am/devicon/javascript-original.svg?size=128&color=currentColor"
+                        alt="JavaScript Icon"
+                        class="w-12 h-12 mb-2 transition-transform duration-500 ease-in-out group-hover:rotate-[270deg]">
+                    <h3>JavaScript</h3>
+                </li>
+                <li
+                    class="group bg-gray-300 dark:bg-gray-800 p-4 rounded-lg border border-transparent transition-all duration-300 hover:scale-105 hover:border-blue-500 hover:shadow-[0_0_30px_5px_rgba(59,130,246,0.4)]">
+                    <img src="https://miro.medium.com/v2/resize:fit:1200/0*KPbWmGp-yjJOthQr.png"
+                        class="w-12 h-12 mb-2 transition-transform duration-500 ease-in-out group-hover:rotate-[270deg]"
+                        alt="">
+                    <h3>Tailwind CSS</h3>
+                </li>
+                <li
+                    class="group bg-gray-300 dark:bg-gray-800 p-4 rounded-lg border border-transparent transition-all duration-300 hover:scale-105 hover:border-blue-500 hover:shadow-[0_0_30px_5px_rgba(59,130,246,0.4)]">
+                    <img src="https://icongr.am/devicon/bootstrap-plain.svg?size=128&color=currentColor"
+                        alt="Bootstrap Icon"
+                        class="w-12 h-12 mb-2 transition-transform duration-500 ease-in-out group-hover:rotate-[270deg]">
+                    <h3>Bootstrap</h3>
+                </li>
+                <li
+                    class="group bg-gray-300 dark:bg-gray-800 p-4 rounded-lg border border-transparent transition-all duration-300 hover:scale-105 hover:border-blue-500 hover:shadow-[0_0_30px_5px_rgba(59,130,246,0.4)]">
+                    <img src="https://icongr.am/devicon/react-original.svg?size=128&color=currentColor" alt="React Icon"
+                        class="w-12 h-12 mb-2 transition-transform duration-500 ease-in-out group-hover:rotate-[270deg]">
+                    <h3>React</h3>
+                </li>
+                <li
+                    class="group bg-gray-300 dark:bg-gray-800 p-4 rounded-lg border border-transparent transition-all duration-300  hover:scale-105 hover:border-blue-500 hover:shadow-[0_0_30px_5px_rgba(59,130,246,0.4)]">
+                    <img src="https://icongr.am/devicon/git-original.svg?size=128&color=currentColor" alt="Git Icon"
+                        class="w-12 h-12 mb-2 transition-transform duration-500 ease-in-out group-hover:rotate-[270deg]">
+                    <h3>Git , GitHub</h3>
+                </li>
+                <li
+                    class=" group bg-gray-300 dark:bg-gray-800 p-4 rounded-lg border border-transparent transition-all duration-300 hover:scale-105 hover:border-blue-500 hover:shadow-[0_0_30px_5px_rgba(59,130,246,0.4)]">
+                    <img src="https://icongr.am/devicon/python-original.svg?size=128&color=currentColor"
+                        alt="Python Icon"
+                        class="w-12 h-12 mb-2 transition-transform duration-500 ease-in-out group-hover:rotate-[270deg]">
+                    <h3>Python</h3>
+                </li>
+                <li
+                    class="group bg-gray-300 dark:bg-gray-800 p-4 rounded-lg border border-transparent transition-all duration-300 hover:scale-105 hover:border-blue-500 hover:shadow-[0_0_30px_5px_rgba(59,130,246,0.4)]">
+                    <img src="https://www.shutterstock.com/image-vector/data-structure-icon-showing-algorithms-260nw-1188490738.jpg"
+                        alt="Database Icon"
+                        class="w-12 h-12 mb-2 transition-transform duration-500 ease-in-out group-hover:rotate-[270deg]">
+                    <h3>Database & Data Structures</h3>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- Projects Section -->
+    <section id="Projects" class="min-h-screen max-w-6xl mx-auto px-4 py-16">
+        <div class="">
+            <h2 class="text-4xl font-bold">Projects</h2>
+            <p class="text-gray-400 text-lg">Some of my recent work</p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-8 mt-10">
+            <a href="https://emanahm24015-create.github.io/Strict/" target="_blank"
+                class="dark:bg-gray-800 bg-gray-300 rounded-lg overflow-hidden shadow-lg border border-transparent transition-all duration-300 hover:scale-105 hover:border-blue-500 hover:shadow-[0_0_30px_5px_rgba(59,130,246,0.4)]">
+                <img src="img/Strict.png" alt="Project 1" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-bold mb-2">Project One</h3>
+                    <p class="text-gray-400">A First responsive Website with HTML & CSS.</p>
+                </div>
+            </a>
+
+            <a href="https://emanahm24015-create.github.io/Restaurant/Emo-Ahmed/html-css-js-project/" target="_blank"
+                class="dark:bg-gray-800 bg-gray-300 rounded-lg overflow-hidden shadow-lg border border-transparent transition-all duration-300 hover:scale-105 hover:border-blue-500 hover:shadow-[0_0_30px_5px_rgba(59,130,246,0.4)]">
+                <img src="img/restaurant.png" alt="Project 2" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-bold mb-2">Project Two</h3>
+                    <p class="text-gray-400">A Second responsive restaurant website built with HTML, CSS, and JavaScript.</p>
+                </div>
+            </a>
+            <a href="https://emanahm24015-create.github.io/APPEXY/" target="_blank"
+                class="dark:bg-gray-800 bg-gray-300 rounded-lg overflow-hidden shadow-lg border border-transparent transition-all duration-300 hover:scale-105 hover:border-blue-500 hover:shadow-[0_0_30px_5px_rgba(59,130,246,0.4)]">
+                <img src="img/APPEXY.png" alt="Project 2" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-bold mb-2">Project Three</h3>
+                    <p class="text-gray-400">A Third responsive website built with HTML, CSS,Tailwind and JavaScript.</p>
+                </div>
+            </a>
+            <a href="https://github.com/emanahm24015-create/Furniture.git" target="_blank"
+                class="dark:bg-gray-800 bg-gray-300 rounded-lg overflow-hidden shadow-lg border border-transparent transition-all duration-300 hover:scale-105 hover:border-blue-500 hover:shadow-[0_0_30px_5px_rgba(59,130,246,0.4)]">
+                <img src="img/furniture.png" alt="Project 2" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-bold mb-2">Project Four</h3>
+                    <p class="text-gray-400">A Fourth responsive website built with HTML, CSS,Bootstrap and JavaScript.</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="Contact">
+        <div class="max-w-6xl mx-auto px-4 py-16">
+            <h2 class="text-4xl font-bold">Contact Me</h2>
+            <p class="text-gray-400 text-lg">Get in touch with me</p>
+        </div>
+        <form action="" >
+            <div class="max-w-6xl mx-auto px-4 py-16">
+                <input type="text" placeholder="Your Name"
+                    class="w-full p-4 mb-4 bg-gray-300 dark:bg-gray-700 rounded-lg border border-transparent focus:border-blue-500 focus:ring-2 focus:ring-blue-500 transition-all duration-300" required>
+              <input type="email" placeholder="Your Email"
+                    class="w-full p-4 mb-4 bg-gray-300 dark:bg-gray-700 rounded-lg border border-transparent focus:border-blue-500 focus:ring-2 focus:ring-blue-500 transition-all duration-300" required>
+                <input type="text" placeholder="Your password"
+                    class="w-full p-4 mb-4 bg-gray-300 dark:bg-gray-700 rounded-lg border border-transparent focus:border-blue-500 focus:ring-2 focus:ring-blue-500 transition-all duration-300" required>
+                <input type="text" placeholder="Your Phone"
+                    class="w-full p-4 mb-4 bg-gray-300 dark:bg-gray-700 rounded-lg border border-transparent focus:border-blue-500 focus:ring-2 focus:ring-blue-500 transition-all duration-300" required>
+                <textarea placeholder="Your Message"
+                    class="w-full p-4 mb-4 bg-gray-300 dark:bg-gray-700 rounded-lg border border-transparent focus:border-blue-500 focus:ring-2 focus:ring-blue-500 transition-all duration-300" required></textarea>
+                <button type="submit"
+                    class="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors duration-300">Send
+                    Message</button>
+            </div>
+        </form>
+
+    </section>
+
+
+    <footer class="bg-zinc-600 dark:bg-black text-white py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <div class="flex justify-center space-x-6 mb-4 text-2xl">
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/share/1J6QaSXK2n/" target="_blank"
+                    class="text-gray-400 hover:text-blue-600 transition-colors">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <!-- WhatsApp -->
+                <a href="https://wa.me/201507325255" target="_blank"
+                    class="text-gray-400 hover:text-green-500 transition-colors">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/emanhlayel?igsh=MTVmMmRoM3J4dno1Mg==" target="_blank"
+                    class="text-gray-400 hover:text-pink-500 transition-colors">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <!-- GitHub -->
+                <a href="https://github.com/emanahm24015-create" target="_blank"
+                    class="text-gray-400 hover:text-gray-200 transition-colors">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <div class="text-gray-400">&copy; 2026 Eman Ahmed. All rights reserved.</div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
